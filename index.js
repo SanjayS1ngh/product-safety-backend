@@ -21,14 +21,14 @@ const app = express();
 
 // ✅ CORS configuration for Vercel frontend
 app.use(cors({
-  origin: 'https://product-safety-analyser.vercel.app',
+  origin: 'https://product-safety-frontendd.vercel.app/',
   methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true,
 }));
 
 // ✅ Handle OPTIONS requests
 app.options('*', cors({
-  origin: 'product-safety-frontendd.vercel.app',
+  origin: 'https://product-safety-frontendd.vercel.app/',
   methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true,
 }));
