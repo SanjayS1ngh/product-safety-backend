@@ -28,7 +28,7 @@ app.use(cors({
 
 // ✅ Handle OPTIONS requests
 app.options('*', cors({
-  origin: 'https://product-safety-analyser.vercel.app',
+  origin: 'product-safety-frontendd.vercel.app',
   methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true,
 }));
